@@ -9,6 +9,7 @@
     body {
       margin:0;
       padding:0;
+      height: 100vh;
     }
     
     .container {
@@ -23,11 +24,12 @@
     }
     
     .card {
-      text-align: center;
-      margin: 15px;
+        text-align:center;
+        margin:15px;
     }
-    .card > img {
-      border-radius:50%;
+    
+    .card > img{
+        border-radius:50%;
     }
     
     .link {
@@ -36,8 +38,73 @@
       justify-content: center;
       padding-top: 10px;
     }
-    
     a {
+      margin-right: 8px;
+      color: white;
+      background: linear-gradient(to right top,#088395,#071952);
+      text-decoration: none;
+      padding: 8px;
+      border-radius: 8px;
+      margin-top: 8px;
+    }
+    
+    body { margin: 0;
+ padding: 0;
+ }
+.nav {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: none;
+  text-align: center;
+  overflow: hidden;
+}
+
+.nav a {
+  display: inline-block;
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px 20px;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  background-color:#8f00126c;
+  color: black;
+}
+  .header {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: none;
+  overflow: hidden;
+}
+
+.header a {
+  display: none;
+  float: left;
+  display: block;
+  color: none;
+  text-align: center;
+  padding: 16px 20px;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  background-color: #8f00126c;
+  color: white;
+}
+
+.header h1 {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+  }
+  a {
       margin-right: 8px;
       color: white;
       background: linear-gradient(to right top,#088395,#071952);
@@ -49,14 +116,15 @@
   </style>
 </head>
 <body>
+
   <div class="container">
     <div class="card">
       <img src="profil.jpg" width="120px" alt="Dewa Bulan">
       <h2>Dewa Bulan</h2>
-      <p>Halo,Saya Chandra Putra Mahadewa,biasa dipanggil Dewa,dan saya seorang Mahasiswa</p>
+      <p>Haalooo Cintaaa😘</p>
       <div class="link">
         <div class="sosmed">
-          <a href="https://instagram.com/bastard.co.id?igshid=OGQ5ZDc2ODk2ZA==">Instagram</a>
+          <a href="https://instagram.com/bastard.co.id?igshid=OGQ5ZDc2ODk2ZA=="/>Instagram</a>
           </div>
           <div class="sosmed">
             <a href="https://www.facebook.com/profile.php?id=100084991009966">Facebook</a>
@@ -67,5 +135,17 @@
       </div>
     </div>
   </div>
+      <div class="nav">
+  <a href="index.html">
+    <img style="width: 50px;" src="home.png">
+    <br>
+    <span style="color: white;">Home</span>
+  </a>
+  <a href="aboutme.html">
+ <img style="width: 50px;" src="gambar.jpg">
+    <br>
+    <span style="color: white;">About Me</span>
+  </a>
+</div>
 </body>
 </html>
